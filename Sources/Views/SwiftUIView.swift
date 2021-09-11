@@ -13,6 +13,8 @@ public struct SwiftUIView: View {
     public init() {}
     public var body: some View {
         Text("THIS IS THE SWIFTUIVIEW FROM THE PACKAGE")
-        Image("starscream")
+        Image(uiImage: UIImage(named: "starscream", in: .module, with: nil)!).resizable()
+            .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            .aspectRatio(contentMode: .fit)
     }
 }
