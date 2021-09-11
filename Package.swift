@@ -23,7 +23,9 @@ let package = Package(
         .target(
             name: "MySwiftPackage",
             dependencies: ["Starscream"],
-            path: "Sources"),
+            path: "Sources",
+            resources: [
+                .process("Resource/Media.xcassets")]),
         .testTarget(
             name: "MySwiftPackageTests",
             dependencies: ["MySwiftPackage"]),

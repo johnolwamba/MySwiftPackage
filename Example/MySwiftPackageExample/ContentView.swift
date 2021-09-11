@@ -6,13 +6,11 @@
 //
 
 import SwiftUI
-import MySwiftPackage
 
 struct ContentView: View {
     var body: some View {
-        WindowGroup {
-            SwiftUIView()
-        }
+        Text("Hello, world!")
+            .padding()
     }
 }
 
